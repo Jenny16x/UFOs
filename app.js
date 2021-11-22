@@ -8,7 +8,7 @@ var tbody = d3.select("tbody");
 
 function buildTable(data) {
     tbody.html("");
-  }
+  
 //11.5.2
   
 
@@ -25,7 +25,7 @@ data.forEach((dataRow) => {
       }
     );
   });
-
+}
 
 function handleClick() {
   // Grab the datetime value from the filter
@@ -46,7 +46,10 @@ function handleClick() {
   buildTable(filteredData);
 //the selector string in the following line of code: "#filter-btn"
 //will excute the handleClick function when clicking the filter button
-d3.selectAll("#filter-btn").on("click", handleClick);
+
 // Build the table when the page loads
-buildTable(tableData);
+//buildTable(tableData);
 };
+buildTable(tableData);
+
+d3.selectAll("#filter-btn").on("click", handleClick);
