@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="static/css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +13,14 @@
       crossorigin="anonymous"
     />
 </head>
-<body>
+<body class="bg-dark" style="color: #f7f7f7;">
     <div class="wrapper">
-        <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <a class="navbar-brand" href="index.html">UFO Sightings</a>
       </nav>
     </div>
     <div class="jumbotron">
-        <h1>The Truth Is Out There</h1>
+      <h1 class="display-4">The Truth is Out There</h1>
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -39,19 +40,19 @@
         <div class="row">
           <div class="col-md-3">
             <form>
-                <p>Filter Search</p>    
-               </form>
-               <ul class="list-group">
+              <p>Filter Search</p>
+              <ul>
                 <li>
-                    <label for="date">Enter Date</label>
-                    <input type="text" placeholder="1/10/2010" id="datetime" />
-                  </li>
-                  <li>
-                     <button id="filter-btn" type="button" class="btn btn-default">
-                       Filter Table
-                     </button>
-                  </li>
-                </ul>
+                  <label for="date">Enter Date</label>
+                  <input type="text" placeholder="1/10/2010" id="datetime" />
+                </li>
+                <li>
+                   <button id="filter-btn" type="button" class="btn btn-dark">
+                     Filter Table
+                   </button>
+                </li>
+              </ul>
+             </form class="bg-dark">>
           </div>
           <div class="col-md-9">
             <table class="table table-striped">
